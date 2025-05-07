@@ -1,6 +1,9 @@
 import React from 'react'
-const navigate = useNavigate();
+
 import { useNavigate, Link } from "react-router-dom";
+
+
+const navigate = useNavigate();
 
 const handleNavigation = (path) => {
     navigate(path);
