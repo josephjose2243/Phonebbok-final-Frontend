@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 // new
@@ -19,6 +19,7 @@ import NewContact from './pages/NewContact';
 import UserLogin from './pages/UserLogin';
 import AdminTrashPage from './pages/AdminTrashPage';
 import EditPageone from './pages/EditPageone';
+import HomPage from './pages/HomPage';
 
 function App() {
   return (
@@ -26,7 +27,9 @@ function App() {
       <div className="flex flex-col">
         <Routes>
           {/* Main Routing */}
-          <Route path="/" element={<AdminAuth />} />
+          <Route path="/" element={<HomPage />} />
+
+          <Route path="/adminlogin" element={<AdminAuth />} />
           <Route path="/userlogin" element={<UserLogin />} />
           <Route path="/allcontacts" element={<AllContact />} />
           <Route path="/dashboard" element={<Dashboard />} />
