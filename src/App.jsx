@@ -13,7 +13,7 @@ import AdminViewAllUseres from './pages/AdminViewAllUseres';
 // User
 import AllContact from './pages/AllContact';
 import Dashboard from './pages/Dashboard';
-import EditPage from './pages/EditPage';  // ✅ Corrected import here
+import EditPage from './pages/EditPage';  
 import TrashPage from './pages/TrashPage';
 import NewContact from './pages/NewContact';
 import UserLogin from './pages/UserLogin';

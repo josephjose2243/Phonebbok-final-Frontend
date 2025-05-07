@@ -1,8 +1,9 @@
 import axios from "axios";
 
-const baseURLfromenv = import.meta.env.BASE_URL 
 const instance = axios.create({
-  baseURL: baseURLfromenv,
+ // baseURL: "http://localhost:5000/api",
+  baseURL: "https://phonebookfinalbackend-2.onrender.com/api",
+
   headers: {
     "Content-Type": "application/json",
   },
