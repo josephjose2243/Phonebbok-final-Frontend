@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 
 import { FaTrashAlt, FaUndo, FaUser, FaUsers, FaUserSlash } from 'react-icons/fa'; 
 import { getTrashedContacts, restoreContact, permanentlyDeleteContact } from '../services/contactApi';
-import AdminSideBar from './AdminSideBar';
 
 const AdminTrashPage = () => {
   const [trashedContacts, setTrashedContacts] = useState([]);
