@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from "react-router";
 const navigate = useNavigate();
 
 const handleNavigation = (path) => {
@@ -9,9 +9,11 @@ const handleNavigation = (path) => {
 const HomPage = () => {
   return (
     <div>
-       <button onClick={() => handleNavigation('/adminlogin')} > Admin Login</button>
-       <button  onClick={() => handleNavigation('/userlogin')}> User Login</button>
+       {/* <button onClick={() => handleNavigation('/adminlogin')} > Admin Login</button>
+       <button  onClick={() => handleNavigation('/userlogin')}> User Login</button> */}
+      <Link to="/adminlogin">admin Login </Link>;
     </div>
+
   )
 }
 
