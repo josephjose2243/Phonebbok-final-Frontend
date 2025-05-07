@@ -9,7 +9,7 @@ import AdminDashboard from './pages/AdminDashboard';
 import AdminAuth from './pages/AdminAuth';
 import AdminViewAllContact from './pages/AdminViewAllContact';
 import AdminViewAllUseres from './pages/AdminViewAllUseres';
-import EditPage from './pages/EditPage'
+
 // User
 import AllContact from './pages/AllContact';
 import Dashboard from './pages/Dashboard';
@@ -18,6 +18,7 @@ import TrashPage from './pages/TrashPage';
 import NewContact from './pages/NewContact';
 import UserLogin from './pages/UserLogin';
 import AdminTrashPage from './pages/AdminTrashPage';
+import EditPageone from './pages/EditPageone';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           
           {/* Handle dynamic ID for EditPage */}
-          <Route path="/editpage/:id" element={<EditPage />} /> {/* Added dynamic path */}
+          <Route path="/editpage/:id" element={<EditPageone />} /> {/* Added dynamic path */}
 
           <Route path="/trash" element={<TrashPage />} />
           <Route path="/newcontact" element={<NewContact />} />

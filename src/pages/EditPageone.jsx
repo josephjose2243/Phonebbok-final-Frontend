@@ -6,7 +6,7 @@ import { FaUser, FaBuilding, FaEnvelope, FaPhone, FaPlus } from "react-icons/fa"
 import SideBar from "../Components/SideBar";
 import { getContactById, updateContactById } from "../services/contactApi";
 
-const EditPage = () => {
+const EditPageone = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
@@ -199,4 +199,4 @@ const EditPage = () => {
   );
 };
 
-export default EditPage;
+export default EditPageone;
