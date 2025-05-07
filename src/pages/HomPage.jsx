@@ -15,7 +15,9 @@ const HomPage = () => {
       <h1>home page </h1>
        {/* <button onClick={() => handleNavigation('/adminlogin')} > Admin Login</button>
        <button  onClick={() => handleNavigation('/userlogin')}> User Login</button> */}
-      <Link to="/adminlogin">admin Login1 </Link>;
+      <Link to="/adminlogin">admin Login </Link>
+      <Link to="/userlogin">user Login</Link>
+
     </div>
 
   )
