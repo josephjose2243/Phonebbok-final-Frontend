@@ -20,7 +20,7 @@ export const getAllUsersWithStatus = async (token) => {
   // Function to get the admin details
 export const getAdminDetails = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/auth/me', {
+      const response = await axios.get('/auth/me', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`, // Get token from localStorage
         }

@@ -47,7 +47,7 @@ const NewContact = () => {
     }
 
     try {
-      const res = await axios.post('http://localhost:5000/api/contacts', formData);
+      const res = await axios.post('/contacts', formData);
       console.log('Contact created:', res.data);
       navigate('/allcontacts');
     } catch (error) {

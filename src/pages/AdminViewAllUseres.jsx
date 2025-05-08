@@ -17,7 +17,7 @@ const AdminViewAllUsers = () => {
   // Fetch all users and their statuses
   const fetchUserStatus = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/auth/allusers');
+      const response = await axios.get('/auth/allusers');
       console.log(response.data);  // Log the data to inspect its structure
   
       if (Array.isArray(response.data)) {
@@ -36,7 +36,7 @@ const AdminViewAllUsers = () => {
   // Fetch current admin details
   const fetchCurrentAdmin = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/auth/me');
+      const response = await axios.get('/auth/me');
       setAdminName(response.data.name);
     } catch (error) {
       console.error('Error fetching admin:', error);

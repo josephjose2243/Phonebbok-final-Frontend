@@ -5,7 +5,7 @@ import axios from "axios";
 // REGISTER USER
 export const registerUser = async (data) => {
   try {
-    const response = await axios.post('http://localhost:5000/api/users/register', {
+    const response = await axios.post('/users/register', {
       firstName: data.firstName,
       lastName: data.lastName,
       email: data.email,
@@ -27,7 +27,7 @@ export const registerUser = async (data) => {
 // LOGIN USER
 export const loginUser = async (data) => {
   try {
-    const response = await axios.post("http://localhost:5000/auth/login", data);
+    const response = await axios.post("/login", data);
     return response;
   } catch (error) {
     if (error.response) {
