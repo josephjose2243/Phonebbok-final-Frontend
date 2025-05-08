@@ -25,6 +25,8 @@ export const restoreContact = async (id) => {
   try {
     const response = await axios.put(`${BASE_URL}/${id}/restore`);
     return response;
+    console.log(response.data);
+    
   } catch (error) {
     console.error("Error restoring contact:", error);
     throw error;

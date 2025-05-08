@@ -10,6 +10,7 @@ export const registerUser = async (data) => {
       lastName: data.lastName,
       email: data.email,
       password: data.password,
+      confirmPassword:data.confirmPassword
     });
     return response; // Returning the response if registration is successful
   } catch (error) {

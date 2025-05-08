@@ -12,6 +12,8 @@ const AllContact = () => {
   const fetchContacts = async () => {
     try {
       const res = await getAllContacts();
+      console.log('Fetched contacts:', res.data.data); // Log contacts for debugging
+
       if (Array.isArray(res.data.data)) {
         setContacts(res.data.data);
       } else {
@@ -83,7 +85,14 @@ const AllContact = () => {
                     <span>{contact.name}</span>
                   </div>
                   <span>{contact.email || '-'}</span>
-                  <span>{contact.phone || '-'}</span>
+
+                  {/* Phone Rendering (Updated for fallback) */}
+                  <span>
+                    {contact.phones || 
+                    (contact.phones && contact.phones.length > 0 ? contact.phones[0].number  : 'No number')}
+                  </span>
+
+
                   <span>{contact.company || '-'}</span>
                   <button
                     className="bg-blue-600 w-8 h-8 flex items-center justify-center rounded-full hover:bg-blue-700 transition duration-200"

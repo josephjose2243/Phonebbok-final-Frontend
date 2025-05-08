@@ -35,6 +35,8 @@ const UserLogin = () => {
         ...form,
         role: "user",
       });
+      console.log(res);
+      
       alert(res.data.message);
       setIsLogin(true); // Switch to login after registration
     } catch (err) {
